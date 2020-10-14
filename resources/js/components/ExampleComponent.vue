@@ -1,17 +1,22 @@
 <template>
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-8">
-                <div class="card">
-                    <div class="card-header">Example Component</div>
-
-                    <div class="card-body">
-                       xxxxxxxxxxxxxx
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+     <v-container>
+        <v-row>
+          <v-col>
+              <v-alert type="info" border="" elevation="" color="green">
+              i am vuetify component
+              </v-alert>
+                  <v-btn small elevation="100" color="blue" to="/foo">Load foo</v-btn>
+                  <v-btn small elevation="100" color="blue" to="/bar">Load Bar</v-btn>
+                  <v-btn small elevation="100" color="blue" to="/user/sifat">Load user</v-btn>
+              
+          </v-col>
+        </v-row>
+        <v-row>
+            <v-col>
+                <router-view></router-view>
+            </v-col>
+        </v-row>
+      </v-container>
 </template>
 
 <script>
