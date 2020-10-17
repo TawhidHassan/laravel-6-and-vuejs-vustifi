@@ -12,11 +12,9 @@
         <link href="" rel="stylesheet">
     </head>
     <body>
-        <v-app id="app">
-            <example-component>
-
-            </example-component>
-        </v-app>
+        <div id="app">
+        <app/>
+        </div>
 
 
     <script src="{{asset('js/app.js')}}"></script>
